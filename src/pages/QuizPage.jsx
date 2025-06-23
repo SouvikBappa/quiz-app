@@ -14,7 +14,7 @@ function QuizPage() {
 
   const currentQuestion = questions[current];
 
-  // Start question timer
+  
   useEffect(() => {
     if (showAnswer) return;
     if (timer === 0) {
@@ -28,7 +28,7 @@ function QuizPage() {
     return () => clearInterval(interval);
   }, [timer, showAnswer]);
 
-  // Record how long the user took
+  
   const recordTime = () => {
     const taken = ((Date.now() - questionStart) / 1000).toFixed(1); // in seconds
     setTimeTaken((prev) => [...prev, Number(taken)]);
