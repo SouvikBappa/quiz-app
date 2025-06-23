@@ -7,7 +7,7 @@ function ScorePage() {
   useEffect(() => {
     const p = JSON.parse(localStorage.getItem("playerInfo"));
     const s = Number(localStorage.getItem("quizScore") || 0);
-    const quizId = localStorage.getItem("quizId"); // ✅ unique quiz ID
+    const quizId = localStorage.getItem("quizId"); 
     const timeArr = JSON.parse(localStorage.getItem("quizTime")) || [];
     const totalTime = timeArr.reduce((a, b) => a + b, 0).toFixed(1);
 
