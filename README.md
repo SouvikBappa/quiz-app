@@ -1,4 +1,4 @@
-⚡ KTJ Quiz App
+⚡ Quiz App(Using React)
 
 A fun, fast-paced, and responsive quiz app built with React + Vite.
 
