@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { questions } from "../data/questions"; // Optional if you randomize questions
+import { questions } from "../data/questions"; 
 
 function StartForm() {
   const [name, setName] = useState("");
