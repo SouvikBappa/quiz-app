@@ -12,4 +12,4 @@ A fun, fast-paced, and responsive quiz app built with React + Vite.
 ✅ Score tracking and personalized result screen  
 ✅ Leaderboard using localStorage (sorted by score & time)  
 ✅ Fully responsive + animated UI    
-✅ Deployed live on **Vercel**
+✅ Deployed live on Vercel-https://quiz-app-theta-beryl.vercel.app/
