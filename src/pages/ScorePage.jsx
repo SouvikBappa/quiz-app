@@ -16,7 +16,7 @@ function ScorePage() {
 
     const leaderboard = JSON.parse(localStorage.getItem("leaderboard")) || [];
 
-    // ✅ Check if this quizId is already recorded
+    
     const alreadyExists = leaderboard.some(entry => entry.id === quizId);
 
     if (p?.name && !alreadyExists) {
