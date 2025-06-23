@@ -30,7 +30,7 @@ function QuizPage() {
 
   
   const recordTime = () => {
-    const taken = ((Date.now() - questionStart) / 1000).toFixed(1); // in seconds
+    const taken = ((Date.now() - questionStart) / 1000).toFixed(1); 
     setTimeTaken((prev) => [...prev, Number(taken)]);
   };
 
@@ -53,7 +53,7 @@ function QuizPage() {
     if (current + 1 < questions.length) {
       setCurrent(current + 1);
     } else {
-      // Save everything
+      
       localStorage.setItem("quizScore", score);
       localStorage.setItem("quizTime", JSON.stringify(timeTaken));
       navigate("/score");
