@@ -11,16 +11,14 @@ function StartForm() {
   const handleStart = () => {
     const player = { name, category, difficulty };
 
-    // ✅ Save player info
+   
     localStorage.setItem("playerInfo", JSON.stringify(player));
 
-    // ✅ Clear previous leaderboard flag to allow new score saving
+   
     localStorage.removeItem("leaderboardSaved");
 
-    // (Optional) Shuffle questions and save to localStorage if using random order
-    // localStorage.setItem("quizQuestions", JSON.stringify(shuffleQuestions(questions)));
 
-    // ✅ Navigate to quiz
+    
     navigate("/quiz");
   };
 
